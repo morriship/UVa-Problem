@@ -12,7 +12,7 @@
 #include<stack>
 #define INF (1<<29)
 #define EPS (1e-10)
-#define two(a) (1<<(a))i
+#define two(a) (1<<(a))
 #define lshift(a,b) (a<<b)
 #define rshift(a,b) (a>>b)
 #define rep(a,b) for(a=0 ; a<b ; ++a)
