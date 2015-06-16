@@ -14,19 +14,18 @@
 typedef long long ll;
 using namespace std;
 
-ll a[40000], b[40000], c[40000];
+ll b[40000], c[40000];
 int x10[] = {10, 100, 1000, 10000, 100000}, len;
 
 void init() {
     int i(1), ind(0), count(1);
-    a[0] = b[0] = c[0] = 0;
+    b[0] = c[0] = 0;
     for (; c[i-1] < 2147483647L; i++) {
         if (i >= x10[ind]) {
             ++count;
             ++ind;
         }
-        a[i] = count;
-        b[i] = b[i-1] + a[i];
+        b[i] = b[i-1] + count;
         c[i] = c[i-1] + b[i];
     }
     len = i;
